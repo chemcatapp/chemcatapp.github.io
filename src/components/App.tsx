@@ -29,7 +29,8 @@ type View = 'dashboard' | 'lesson' | 'practice' | 'profile' | 'leaderboard' | 'l
 type Theme = 'light' | 'dark';
 
 // FIX: The API key must be obtained from `process.env.API_KEY` as per the coding guidelines.
-const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
+const ai = new GoogleGenAI({apiKey: import.meta.env.VITE_GEMINI_API_KEY});
+
 
 const LOADING_MESSAGES = [
     "Calibrating the Bunsen burner...",

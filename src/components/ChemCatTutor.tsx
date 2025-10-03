@@ -9,7 +9,7 @@ interface ChemCatTutorProps {
 }
 
 // FIX: The API key must be obtained from `process.env.API_KEY` as per the coding guidelines.
-const ai = new GoogleGenAI({apiKey: process.env.API_KEY});
+const ai = new GoogleGenAI({apiKey: import.meta.env.VITE_GEMINI_API_KEY});
 
 const ChemCatTutor: React.FC<ChemCatTutorProps> = ({ lesson, onClose }) => {
     const [chat, setChat] = useState<Chat | null>(null);
