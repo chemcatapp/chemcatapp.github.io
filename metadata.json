@@ -1,0 +1,5 @@
+{
+  "name": "ChemCat",
+  "description": "An interactive, Duolingo-style chemistry learning app with ChemCat. It covers a complete honors chemistry curriculum with a friendly pastel design, interactive exercises, and a daily streak system to keep you motivated.",
+  "requestFramePermissions": []
+}
